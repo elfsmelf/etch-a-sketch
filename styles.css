@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+}
+.container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.rainbow-mode {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  background: white;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+.grid-item {
+  flex: 0 0 calc(33%); /* 25% width minus 3/4 of the gap */
+  aspect-ratio: 1 / 1; /* Creates a square aspect ratio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  height: 600px;
+  padding: 20px;
+}
+
+.reset-button {
+  border: solid grey 1px;
+  background-color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.reset-button:hover {
+  background-color: rgb(244, 244, 244);
+}

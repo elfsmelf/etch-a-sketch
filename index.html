@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls-container">
+        <h1>Etch-A-Sketch</h1>
+        <h2>
+          Canvas Size <span class="slider-value"></span> x
+          <span class="slider-value2"></span>
+        </h2>
+        <input type="range" min="1" max="64" class="slider" value="16" />
+        <div class="rainbow-mode">
+          <h3>Rainbow Mode?</h3>
+          <input type="checkbox" id="rainbow-checkbox" />
+        </div>
+        <button class="reset-button">Reset</button>
+      </div>
+      <div class="grid-container"></div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
